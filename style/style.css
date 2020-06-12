@@ -1,6 +1,153 @@
 /**************
     VARIABLES
 **************/
+/**************
+    GENERAL
+**************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #FFF;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #242942;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  padding-top: 38px;
+}
+
+h1,
+button {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/**************
+    HEADER
+**************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header .logo {
+  width: 24px;
+  height: 24px;
+}
+
+/**************
+    MENU
+**************/
+ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+/**************
+    MAIN
+**************/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+/**************
+    TEXT
+**************/
+.intro-text .new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-text .new p {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 5px;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.intro-text .preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-btn {
+  background-color: #242942;
+  padding: 7px 10px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.demo-btn {
+  background-color: #ff5c5c;
+  padding: 15px 25px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.93px;
+  border-radius: 5px;
+}
+
+/**************
+    ILLUSTRATION
+**************/
+/**************
+    FOOTER
+**************/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -9,4 +156,8 @@
 .attribution a {
   color: #3e52a3;
 }
+
+/**************
+    MEDIA QUERIES
+**************/
 /*# sourceMappingURL=style.css.map */
