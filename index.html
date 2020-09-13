@@ -5,68 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/style/style.css">
-
-  <script src="/js/main.js" async></script>
-  
+  <link rel="stylesheet" href="./style/style.css">
   <title>Frontend Mentor | Project tracking intro component</title>
 
 </head>
 <body>
-
   <header>
-    <div class="logo">
-      <img src="/images/logo.svg" alt="monograph">
-    </div> <!-- End logo -->
+    <div><a href="/"><img src="./images/logo.svg" alt="Monograph"></a></div>
     <nav>
       <ul>
-        <li><a>Product</a></li>
-        <li><a>Features</a></li>
-        <li><a>Pricing</a></li>
-        <li><a>Login</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#" class="bullet">&bull;</a></li>
+        <li><a href="#" class="login">Login</a></li>
       </ul>
     </nav>
-    <div class="hamburger">
-      <img src="/images/icon-hamburger.svg" alt="menu" id="menu" width="24" height="16">
-    </div>
   </header>
-
-
   <main>
-    
-    <div class="intro-text">
-      <div class="new">
-        <button type="button" class="button new-btn">New</button>
-        <p>Monograph Dashboard</p>
+
+    <section class="text-section">
+      <div class="cta-group">
+        <button class="btn btn-blue">New</button>
+        <span>Monograph Dashboard</span>
       </div>
       
-      <h1>Powerful insights into your team</h1>
+      <h1>
+        Powerful insights 
+        <br>
+        into your team
+      </h1>
       
       <p>
-        Project planning and time tracking for agile teams
+        Project planning and time tracking 
+        <br>
+        for agile teams
       </p>
-
-      <div class="preview">
-        <button type="button" class="button demo-btn">Schedule a demo</button>
-        <p>
-          to see a live preview
-        </p>
-      </div> <!-- End preview -->
-    </div> <!-- End intro-text -->
-
-    <div class="intro-image">
-      <img src="/images/illustration-devices.svg" alt="illustration of mobile and desktop mockups">
-    </div> <!-- End intro-image -->
-
+      
+      <div class="cta-group">
+        
+        <button class="btn btn-pink">Schedule a demo</button>
+        <span>to see a live preview</span>
+      </div>
+    </section>
+    <section class="illustration-section">
+      <div class="grey-background"></div>
+      <div class="illustration"></div>
+      
+    </section>
+    
   </main>
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://lauraho.net">Laura Ho</a>.
+      Coded by <a href="https://lauraho.net" target="_blank" rel="noopener nofollow">Laura Ho</a>.
     </p>
   </footer>
 </body>
