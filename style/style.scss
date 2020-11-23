@@ -57,6 +57,11 @@ header {
     margin-top: 65px;
 }
 
+nav {
+    border-radius: 10px;
+
+}
+
 li {
     list-style-type: none;
     display: inline-block;
@@ -89,6 +94,11 @@ li a {
     }
 }
 
+.line {
+    border-bottom: 1px solid rgba(36,41,66,.15);
+    display: none !important;
+}
+
 .login {
     margin-right: 0;
     opacity: .5;
@@ -103,6 +113,18 @@ li a {
         margin-top: 0;
         padding-left: 32px;
         padding-right: 32px;
+    }
+
+    li a {
+        margin-right: 0;
+    }
+
+    .bullet {
+        display: none !important;
+    }
+
+    .line {
+        display: block !important;
     }
 }
 
@@ -132,9 +154,8 @@ li a {
     position: absolute;
     display: none;
     top: 115px;
-    height: 300px;
-    transition: left 0.3s ease,
-                box-shadow 0.3s ease;
+    height: 275px;
+    transition: left 0.3s ease;
     z-index: 999;
 }
 
@@ -142,15 +163,13 @@ li a {
     list-style: none;
     margin: 0;
     padding: 2.5em 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    box-shadow: -8px 0 8px rgba(0,0,0,.5);
     min-height: 100%;
-    width: 200px;
+    width: 80vw;
+    max-width: 300px;
     background: #fff;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
   
 .main-menu a {
@@ -173,9 +192,6 @@ li a {
     display: block;
     left: 0;
     outline: none;
-    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-    box-shadow: 3px 0 12px rgba(0,0,0,.25);
 }
   
 .main-menu:target .menu-close,
@@ -198,8 +214,7 @@ li a {
     width: 100%;
     height: 100%;
     z-index: 998;
-    background: #000;
-    background: rgba(0,0,0,.85);
+
     cursor: default;
 }
   
@@ -212,6 +227,10 @@ li a {
 }
   
 @media (min-width: 768px) {
+    nav { 
+        width: 100%;
+    }
+
     .login {
         text-align: left;
     }
@@ -223,20 +242,16 @@ li a {
     
     .main-menu {
         position: relative;
-        left: auto;
+        left: 15% !important;
         top: auto;
         height: auto;
         display: block;
-        box-shadow: none !important;
     }
     
     .main-menu ul {
       display: flex;
       flex-direction: row;
       padding: 0;
-      -webkit-box-shadow: none;
-         -moz-box-shadow: none;
-              box-shadow: none;
       height: auto;
       width: auto;
       background: none;
@@ -254,9 +269,38 @@ li a {
 
 }
 
+@media (min-width: 1000px) {
+    .main-menu {
+        left: 25% !important;
+    }
+}
+@media (min-width: 1200px) {
+    .main-menu {
+        left: 50% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .main-menu {
-        left: 200px !important;
+        left: 150px !important;
+    }
+
+    .main-menu ul {
+        text-align: center;
+    }
+
+    .login {
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    li a {
+        margin-right: 25px;
+    }
+
+    .bullet {
+        margin-right: 25px;
     }
 }
 
